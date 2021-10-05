@@ -13,7 +13,7 @@ body {
 header {
    width: 100vw;
    height: 100px;
-   padding: 0 30px;
+   padding: 0 20px;
    position: fixed;
    top: 0;
    left: 0;
@@ -26,6 +26,13 @@ header {
 
 #logo img {
    width: 150px;
+}
+
+header .btn:hover {
+   margin-right: 5px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   font-size: 1.15em;
 }
 
 /* MAIN********** */
@@ -59,4 +66,16 @@ nav {
    display: flex;
    justify-content: space-between;
    align-items: center;
+}
+
+/* GLOGAL *********  */
+.btn {
+   margin-right: 20px;
+   padding: 15px 50px;
+   text-transform: uppercase;
+   text-decoration: none;
+   color: #FFF;
+   border: 1px solid #FFF;
+   border-radius: 50px;
+   transition: all 0.2s;
 }
