@@ -88,6 +88,7 @@ nav .container {
    font-size: 60px;
 }
 .playlist ul {
+   height: 50%;
    overflow: auto;
 }
 .playlist ul li {
@@ -164,6 +165,26 @@ nav .container {
    padding: 0 5px;
    font-size: 25px;
 }
+
+/* player central */
+.player .central {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.player .central .top {
+   font-size: 22px;
+}
+.player .central .top .fa-play-circle {
+   font-size: 40px;
+}
+.player .central .top i {
+   margin: 0 15px;
+   vertical-align: middle;
+   cursor: pointer;
+}
+
 /* GLOGAL *********  */
 .container {
    width: 90%;
