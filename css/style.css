@@ -49,26 +49,46 @@ nav {
    padding-left: 15px;
    padding-right: 15px; background-color: #000;
 }
-/* menu  */
-.menu ul li {
-   margin-bottom: 15px;
-}
-li .item {
+.item {
    color: #7C7C7C;
 }
-li .item i {
+.item i {
    padding-right: 10px;
    vertical-align: middle;
    font-size: 30px;
    color: #A2A2A2
 }
-.item.active,
-.item.active > i {
-   color: #FFF;
-}
 .item:hover i,
 .item:hover {
    color: #FFF;
+}
+
+/* menu  */
+.menu {
+   margin-bottom: 40px;
+}
+.menu ul li {
+   margin-bottom: 15px;
+}
+.menu .item.active,
+.menu .item.active > i {
+   color: #FFF;
+}
+
+/* playlist */
+.item.create {
+   padding: 10px 0;
+   display: block;
+}
+.item.create > i {
+   font-size: 60px;
+}
+.playlist ul {
+   height: 300px;
+   overflow: auto;
+}
+.playlist ul li {
+   padding: 10px 0;
 }
 /* CONTENT********* */
 .content {
