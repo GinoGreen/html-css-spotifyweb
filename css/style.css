@@ -96,7 +96,7 @@ nav .container {
 /* footer nav  */
 .nav-footer {
    width: 100%;
-   /* padding: 10px 0; */
+   padding: 10px 0;
    position: absolute;
    bottom: 0;
 }
@@ -144,6 +144,24 @@ nav .container {
    z-index: 999;
 }
 
+/* player left */
+.player .left {
+   display: flex;
+   justify-content: space-between;
+}
+.player .left img {
+   width: 50px;
+   margin-right: 10px;
+   vertical-align: middle;
+   cursor: pointer;
+}
+.player .left .song-name {
+   display: inline-block;
+   vertical-align: middle;
+}
+.player .left .song-name span {
+   color: #7C7C7C;
+}
 /* GLOGAL *********  */
 .container {
    width: 90%;
