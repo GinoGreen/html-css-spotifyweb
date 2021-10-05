@@ -4,11 +4,15 @@
    box-sizing: border-box;
 }
 
+body {
+   color: #FFF;
+}
+
 /* HEADER ******* */
 header {
    width: 100vw;
    height: 100px;
-   padding: 0 20px;
+   padding: 0 30px;
    position: fixed;
    top: 0;
    left: 0;
@@ -31,13 +35,27 @@ main {
 /* NAV ASIDE******** */
 nav {
    width: 300px;
-   height: 100vh;
+   height: calc(100vh - 100px);
    background-color: #000;
 }
 /* CONTENT********* */
 .content {
    width: calc(100vw - 300px);
-   height: 100vh;
-   background-color: grey;
+   height: calc(100vh - 100px);
+   padding-top: 100px;
+   overflow: auto;
+   background-color: #141922;
 }
 /* PLAYER SECTION ******** */
+.player {
+   width: 100vw;
+   height: 100px;
+   padding: 0 20px;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   background-color: #282828;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
