@@ -146,8 +146,10 @@ nav .container {
 
 /* player left */
 .player .left {
+   width: 300px;
    display: flex;
    justify-content: space-between;
+   align-items: center;
 }
 .player .left img {
    width: 50px;
@@ -161,6 +163,10 @@ nav .container {
 }
 .player .left .song-name span {
    color: #7C7C7C;
+}
+.player .left .icons i {
+   padding: 0 5px;
+   font-size: 25px;
 }
 /* GLOGAL *********  */
 .container {
