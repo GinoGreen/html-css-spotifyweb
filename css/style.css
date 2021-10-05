@@ -47,9 +47,11 @@ nav {
    background-color: #000;
 }
 nav .container {
-   position: relative;
    height: calc(100vh - 100px);
    padding-top: 100px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
 }
 .item {
    color: #7C7C7C;
