@@ -7,6 +7,7 @@
 body {
    font-family: 'Montserrat', sans-serif;
    color: #FFF;
+   font-size: 18px;
 }
 
 /* HEADER ******* */
@@ -44,7 +45,30 @@ main {
 nav {
    width: 300px;
    height: calc(100vh - 100px);
-   background-color: #000;
+   padding-top: 100px;
+   padding-left: 15px;
+   padding-right: 15px; background-color: #000;
+}
+/* menu  */
+.menu ul li {
+   margin-bottom: 15px;
+}
+li .item {
+   color: #7C7C7C;
+}
+li .item i {
+   padding-right: 10px;
+   vertical-align: middle;
+   font-size: 30px;
+   color: #A2A2A2
+}
+.item.active,
+.item.active > i {
+   color: #FFF;
+}
+.item:hover i,
+.item:hover {
+   color: #FFF;
 }
 /* CONTENT********* */
 .content {
@@ -69,11 +93,16 @@ nav {
 }
 
 /* GLOGAL *********  */
+a {
+   text-decoration: none;
+}
+ul {
+   list-style: none;
+}
 .btn {
    margin-right: 20px;
    padding: 15px 50px;
    text-transform: uppercase;
-   text-decoration: none;
    color: #FFF;
    border: 1px solid #FFF;
    border-radius: 50px;
