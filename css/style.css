@@ -86,7 +86,6 @@ nav .container {
    font-size: 60px;
 }
 .playlist ul {
-   height: calc(65vh - 150px);
    overflow: auto;
 }
 .playlist ul li {
@@ -97,8 +96,6 @@ nav .container {
 .nav-footer {
    width: 100%;
    padding: 10px 0;
-   position: absolute;
-   bottom: 0;
 }
 .nav-footer .top {
    padding-bottom: 20px;
@@ -134,9 +131,6 @@ nav .container {
    width: 100vw;
    height: 100px;
    padding: 0 20px;
-   position: absolute;
-   bottom: 0;
-   left: 0;
    background-color: #282828;
    display: flex;
    justify-content: space-between;
