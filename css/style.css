@@ -141,8 +141,12 @@ nav .container > .top {
    overflow: auto;
    background-color: #141922;
 }
+.row {
+   margin: 30px 0;
+}
 /* categorie */
 .row.categories {
+   margin: 0;
    text-align: center;
    display: flex;
    justify-content: center;
@@ -157,6 +161,9 @@ nav .container > .top {
    margin-top: 10px;
 }
 
+.row h1 {
+   padding: 20px 0;
+}
 /* ascoltati di recenti */
 .row .albums {
    margin: 20px 0;
@@ -186,6 +193,11 @@ nav .container > .top {
 .row .photo-album img {
    width: 100%;
    cursor: pointer;
+}
+
+/* artisti popolari  */
+.row.artists .photo-album img {
+   border-radius: 50%;
 }
 
 /* PLAYER SECTION ******** */
