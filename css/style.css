@@ -48,14 +48,15 @@ nav {
    overflow: hidden;
 }
 nav .container {
-   height: calc(100vh - 100px);
-   padding-top: 100px;
    display: flex;
    flex-direction: column;
-   justify-content: space-between;
+   height: calc(100vh - 100px);
+   padding-top: 100px;
 }
 nav .container > .top {
-   height: calc(100% - 145px);
+   display: flex;
+   flex-direction: column;
+   flex-basis: 100%;
    min-height: 300px;
 }
 .item {
@@ -90,6 +91,12 @@ nav .container > .top {
 }
 
 /* playlist */
+.playlist {
+   display: flex;
+   flex-direction: column;
+   flex-basis: 100%;
+   overflow: auto;
+}
 .item.create {
    padding: 10px 0;
    display: block;
@@ -98,7 +105,6 @@ nav .container > .top {
    font-size: 60px;
 }
 .playlist ul {
-   height: calc(100% - 145px);
    overflow: auto;
 }
 .playlist ul li {
@@ -144,6 +150,10 @@ nav .container > .top {
 .row {
    margin: 30px 0;
 }
+.row h1 {
+   padding: 20px 0;
+}
+
 /* categorie */
 .row.categories {
    margin: 0;
@@ -161,19 +171,16 @@ nav .container > .top {
    margin-top: 10px;
 }
 
-.row h1 {
-   padding: 20px 0;
-}
 /* ascoltati di recenti */
 .row .albums {
    margin: 20px 0;
    display: flex;
    justify-content: flex-start;
-   flex-wrap: nowrap;
+   flex-wrap: wrap;
 }
 
 .row .albums .album {
-   width: calc(100% / 6.5);
+   width: calc(100% / 6 - 20px);
    margin: 0 10px;
    display: flex;
    flex-direction: column;
