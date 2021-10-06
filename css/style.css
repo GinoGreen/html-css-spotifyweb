@@ -83,6 +83,11 @@ nav .container > .top {
 .menu .item.active > i {
    color: #FFF;
 }
+.menu .item.active > i {
+   padding-left: 8px;
+   margin-left: -15px;
+   border-left: 5px solid #B0FF2F;
+}
 
 /* playlist */
 .item.create {
@@ -133,6 +138,21 @@ nav .container > .top {
    padding-top: 100px;
    overflow: auto;
    background-color: #141922;
+}
+
+/* categorie */
+.row {
+   text-align: center;
+   display: flex;
+   justify-content: center;
+}
+.row .category {
+   padding: 20px 30px;
+}
+.category .selected {
+   width: 50%;
+   height: 5px;
+   margin-top: 10px;
 }
 /* PLAYER SECTION ******** */
 .player {
@@ -278,4 +298,15 @@ ul {
    border: 1px solid #FFF;
    border-radius: 50px;
    transition: all 0.2s;
+}
+.category {
+   color: #86888D;
+   text-transform: uppercase;
+   font-weight: bold;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.selected {
+   background-color: #B0FF2F;
 }
