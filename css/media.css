@@ -20,11 +20,24 @@
       width: 30%;
       font-size: 0.7em;
    }
+   .player .left .icons {
+      width: 20%;
+   }
+   .player .left .icons i {
+      font-size: 0.8em;
+   }
    .player .left .song img {
       width: 30%;
+      margin: 0;
    }
    .player .right {
       width: 32%;
+   }
+   .player .central .top {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 30%;
    }
 }
 
