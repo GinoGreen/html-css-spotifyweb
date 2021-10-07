@@ -64,16 +64,18 @@ nav .container > .top {
    display: flex;
    flex-direction: column;
    flex-basis: 100%;
-   min-height: 300px;
+   min-height: 200px;
 }
 .item {
    color: #7C7C7C;
+   transition: all 0.1s;
 }
 .item i {
    padding-right: 10px;
    vertical-align: middle;
    font-size: 30px;
-   color: #A2A2A2
+   color: #A2A2A2;
+   transition: all 0.1s;
 }
 .item:hover i,
 .item:hover {
@@ -214,7 +216,7 @@ nav h3 {
    position: absolute;
    top: 0;
    left: 0;
-   transition: all 0.3s;
+   transition: all 0.2s;
 }
 .row.artists .photo-album .overlay {
    border-radius: 50%;
@@ -226,10 +228,10 @@ nav h3 {
    transform: translate(-50%, -50%);
    font-size: 10px;
    color: transparent;
-   transition: all 0.3s;
+   transition: all 0.2s;
 }
 .row .photo-album:hover .overlay {
-   background-color: rgba(0, 0, 0, .5);
+   background-color: rgba(0, 0, 0, .65);
 }
 .row .photo-album:hover .fa-play-circle{
    color: #FFF;
@@ -274,6 +276,12 @@ nav h3 {
 }
 .player .left .song-name span {
    color: #7C7C7C;
+   transition: all 0.1s;
+   cursor: pointer;
+}
+.player .left .song-name span:hover {
+   text-decoration: underline;
+   color: #FFF;
 }
 .player .left .icons i {
    padding: 0 5px;
@@ -293,6 +301,12 @@ nav h3 {
 }
 .player .central .top .fa-play-circle {
    font-size: 40px;
+   margin: 5px;
+   transition: all 0.1s;
+}
+.player .central .top .fa-play-circle:hover {
+   font-size: 50px;
+   margin: 0;
 }
 .player .central .top i {
    margin: 0 10px;
@@ -301,7 +315,6 @@ nav h3 {
 }
 .player .central .bottom {
    width: 60%;
-   margin-top: 10px;
    display: flex;
    justify-content: space-around;
    align-items: center;
@@ -312,10 +325,11 @@ nav h3 {
 }
 .player .central .bottom .song-bar {
    width: 100%;
-   height: 6px;
+   height: 3px;
    margin: 0 20px;
    background-color: #5A5A5A;
    border-radius: 5px;
+   transition: height 0.13s;
 }
 .current {
    display: flex;
@@ -327,18 +341,23 @@ nav h3 {
    background-color: #C2C2C2;
 }
 .circle {
-   width: 16px;
-   height: 16px;
-   margin-right: -6px;
-   display: none;
+   width: 0px;
+   height: 0px;
    background-color: #FFF;
    border-radius: 50%;
+   transition: all 0.24s;
+   transition-delay: 0.1s;
+}
+.player .central .bottom:hover .song-bar {
+   height: 6px;
 }
 .player .central .bottom:hover .current {
    background-color: #B0FF2F;
 }
 .player .central .bottom:hover .circle {
-   display: inline-block;
+   width: 16px;
+   height: 16px;
+   margin-right: -7px;
 }
 
 /* player right */
@@ -354,16 +373,22 @@ nav h3 {
 }
 .player .right .sound-bar {
    width: 40%;
-   height: 6px;
+   height: 3px;
    background-color: #5A5A5A;
    border-radius: 5px;
    cursor: pointer;
+   transition: height 0.13s;
+}
+.player .right .sound-bar:hover {
+   height: 6px;
 }
 .player .right .sound-bar:hover .current {
    background-color: #B0FF2F;
 }
 .player .right .sound-bar:hover .circle {
-   display: inline-block;
+   width: 16px;
+   height: 16px;
+   margin-right: -7px;
 }
 
 /* GLOGAL *********  */
