@@ -22,6 +22,7 @@ header {
    justify-content: space-between;
    align-items: center;
    background-color: rgba(0, 0, 0, 0.5);
+   overflow: hidden;
    z-index: 500;
 }
 
@@ -314,7 +315,7 @@ nav h3 {
    cursor: pointer;
 }
 .player .central .bottom {
-   width: 60%;
+   width: 70%;
    display: flex;
    justify-content: space-around;
    align-items: center;
