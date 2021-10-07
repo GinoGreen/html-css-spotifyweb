@@ -22,7 +22,6 @@ header {
    justify-content: space-between;
    align-items: center;
    background-color: rgba(0, 0, 0, 0.5);
-   z-index: 500;
 }
 
 #logo img {
@@ -38,8 +37,11 @@ header .btn:hover {
 
 /* MAIN********** */
 main {
+   height: calc(100vh - 100px);
+   overflow: hidden;
    display: flex;
    justify-content: flex-start;
+
 }
 /* NAV ASIDE******** */
 nav {
@@ -176,7 +178,6 @@ nav .container > .top {
    margin: 20px 0;
    display: flex;
    justify-content: flex-start;
-   flex-wrap: wrap;
 }
 
 .row .albums .album {
