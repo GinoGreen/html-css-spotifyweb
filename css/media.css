@@ -1,8 +1,50 @@
 /* MEDIA QUERY **************  */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1400px) {
+   .row .albums {
+      flex-wrap: wrap;
+   }
    .row .albums .album {
       width: calc(100% / 4 - 20px);
-      margin: 0 10px;
-      flex-wrap: wrap;
+   }
+}
+
+@media screen and (max-width: 992px) {
+   .row .albums .album {
+      width: calc(100% / 2 - 20px);
+   }
+}
+
+@media screen and (max-width: 576px) {
+   #logo img.pxdesktop {
+      display: none;
+   }
+   #logo img.px576 {
+      display: block;
+      margin-left: -7px;
+   }
+   nav .playlist,
+   nav span,
+   nav h3 {
+      display: none;
+   }
+   nav {
+      width: 70px;
+   }
+   nav .container {
+      align-items: center;
+   }
+   .item i,
+   .nav-footer .bottom img {
+      padding: 0;
+      margin: 0;
+   }
+   .nav-footer {
+      text-align: center;
+   }
+   .content {
+      width: calc(100% - 70px);
+   }
+   .row .albums .album {
+      width: calc(100% - 20px);
    }
 }
