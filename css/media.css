@@ -6,6 +6,9 @@
    .row .albums .album {
       width: calc(100% / 4 - 20px);
    }
+   .player .central .bottom {
+      width: 80%;
+   }
 }
 
 @media screen and (max-width: 992px) {
@@ -79,5 +82,13 @@
    }
    .row .albums .album {
       width: calc(100% - 20px);
+   }
+   .player .central .bottom {
+      width: 100%;
+   }
+   .player .central .top i,
+   .player .right i,
+   .player .left .icons {
+      font-size: 0.7em;
    }
 }

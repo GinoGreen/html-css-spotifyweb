@@ -64,7 +64,7 @@ nav .container > .top {
    display: flex;
    flex-direction: column;
    flex-basis: 100%;
-   min-height: 200px;
+   min-height: 282px;
 }
 .item {
    color: #7C7C7C;
