@@ -22,6 +22,7 @@ header {
    justify-content: space-between;
    align-items: center;
    background-color: rgba(0, 0, 0, 0.5);
+   z-index: 500;
 }
 
 #logo img {
@@ -210,7 +211,13 @@ nav h3 {
 .row .photo-album .overlay {
    width: 100%;
    height: 100%;
-   background-color: rgba(0, 0, 0, .5);
+   position: absolute;
+   top: 0;
+   left: 0;
+   transition: all 0.3s;
+}
+.row.artists .photo-album .overlay {
+   border-radius: 50%;
 }
 .row .photo-album .fa-play-circle {
    position: absolute;
@@ -221,13 +228,14 @@ nav h3 {
    color: transparent;
    transition: all 0.3s;
 }
+.row .photo-album:hover .overlay {
+   background-color: rgba(0, 0, 0, .5);
+}
 .row .photo-album:hover .fa-play-circle{
    color: #FFF;
    font-size: 50px;
 }
-.row .photo-album:hover .overlay {
-   
-}
+
 
 /* artisti popolari  */
 .row.artists .photo-album img {

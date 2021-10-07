@@ -1,7 +1,7 @@
 /* MEDIA QUERY **************  */
-@media screen and (max-width: 1400px) {
-   .row .albums {
-      flex-wrap: wrap;
+@media screen and (max-width: 1200px) {
+   .row .albums .album.px1200 {
+      display: none;
    }
    .row .albums .album {
       width: calc(100% / 4 - 20px);
@@ -9,6 +9,9 @@
 }
 
 @media screen and (max-width: 992px) {
+   .row .albums .album.px992 {
+      display: none;
+   }
    .row .albums .album {
       width: calc(100% / 2 - 20px);
    }
@@ -42,6 +45,9 @@
 }
 
 @media screen and (max-width: 576px) {
+   .row .albums .album.px576 {
+      display: none;
+   }
    #logo img.pxdesktop {
       display: none;
    }
