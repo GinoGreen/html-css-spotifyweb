@@ -173,7 +173,7 @@
          border: 1px solid #FFF;
       }
    }
-   header #logo img {
+   header #logo .pxdesktop {
       animation-name: not-player-3;
       animation-timing-function: linear;
       animation-duration: .5s;
