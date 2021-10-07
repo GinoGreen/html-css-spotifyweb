@@ -92,3 +92,98 @@
       font-size: 0.7em;
    }
 }
+
+@media screen and (max-height: 180px) {
+   header {
+      animation-name: only-player;
+      animation-timing-function: linear;
+      animation-duration: .5s;
+      /* animation-play-state: paused; */
+      visibility: hidden;
+
+   }
+   @keyframes only-player {
+      from {
+         visibility: visible;
+         background-color: rgba(0, 0, 0, 0.5);
+      }
+      to {
+         background-color: rgba(0, 0, 0, 0);
+      }
+   }
+   header .btn {
+      animation-name: only-player-1;
+      animation-timing-function: linear;
+      animation-duration: .5s;
+   }
+   @keyframes only-player-1 {
+      from {
+         color: #FFF;
+         border: 1px solid #FFF;
+      }
+      to {
+         color: transparent;
+         border: none;
+      }
+   }
+   header #logo img {
+      animation-name: only-player-2;
+      animation-timing-function: linear;
+      animation-duration: .5s;
+   }
+   @keyframes only-player-2 {
+      from {
+         width: 150px;
+      }
+      to {
+         width: 0;
+      }
+   }
+}
+@media screen and (min-height: 181px) {
+   header {
+      animation-name: not-player;
+      animation-timing-function: linear;
+      animation-duration: .5s;
+      /* animation-play-state: paused; */
+      visibility: visible;
+
+   }
+   @keyframes not-player {
+      from {
+         visibility: hidden;
+         background-color: rgba(0, 0, 0, 0);
+      }
+      to {
+         background-color: rgba(0, 0, 0, 0.5);
+      }
+   }
+   header .btn {
+      animation-name: not-player-2;
+      animation-timing-function: linear;
+      animation-duration: .5s;
+   }
+   @keyframes not-player-2 {
+      from {
+         color: transparent;
+         border: none;
+      }
+      to {
+         color: #FFF;
+         border: 1px solid #FFF;
+      }
+   }
+   header #logo img {
+      animation-name: not-player-3;
+      animation-timing-function: linear;
+      animation-duration: .5s;
+   }
+   @keyframes not-player-3 {
+      from {
+         width: 0;
+      }
+      to {
+         width: 150px;
+      }
+   }
+}
