@@ -12,6 +12,20 @@
    .row .albums .album {
       width: calc(100% / 2 - 20px);
    }
+   .player .left {
+      max-width: 300px;
+      width: 20%;
+   }
+   .player .left .song-name {
+      width: 30%;
+      font-size: 0.7em;
+   }
+   .player .left .song img {
+      width: 30%;
+   }
+   .player .right {
+      width: 32%;
+   }
 }
 
 @media screen and (max-width: 576px) {
