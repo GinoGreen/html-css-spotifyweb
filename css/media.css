@@ -48,6 +48,17 @@
 }
 
 @media screen and (max-width: 576px) {
+   header .btn {
+      width: 48%;
+      height: 50px;
+      margin: 0;
+      padding: 2px 22px;
+   }
+   header .btn:hover {
+      margin: 0;
+      padding: 2px 22px;
+      font-size: 1em;
+   }
    .row .albums .album.px576 {
       display: none;
    }
@@ -83,6 +94,25 @@
    .row .albums .album {
       width: calc(100% - 20px);
    }
+   .player {
+      justify-content: unset;
+   }
+   .player .left {
+      width: 20%;
+   }
+   
+   .player .left .song img {
+      width: 100%;
+      max-width: 70px;
+      padding-right: 20px;
+   }
+   .player .left .icons,
+   .player .left .song-name {
+      display: none;
+   }
+   .player .central {
+      width: 80%;
+   }
    .player .central .bottom {
       width: 100%;
    }
@@ -91,16 +121,35 @@
    .player .left .icons {
       font-size: 0.7em;
    }
+   .player .right {
+      display: none;
+   }
 }
 
 @media screen and (max-height: 180px) {
    header {
       animation-name: only-player;
       animation-timing-function: linear;
-      animation-duration: .5s;
+      animation-duration: .2s;
       /* animation-play-state: paused; */
       visibility: hidden;
 
+   }
+   header .btn {
+      display: none;
+   }
+   header #logo img {
+      animation-name: only-player-2;
+      animation-timing-function: linear;
+      animation-duration: .2s;
+   }
+   @keyframes only-player-2 {
+      from {
+         width: 40px;
+      }
+      to {
+         width: 0;
+      }
    }
    @keyframes only-player {
       from {
@@ -111,40 +160,12 @@
          background-color: rgba(0, 0, 0, 0);
       }
    }
-   header .btn {
-      animation-name: only-player-1;
-      animation-timing-function: linear;
-      animation-duration: .5s;
-   }
-   @keyframes only-player-1 {
-      from {
-         color: #FFF;
-         border: 1px solid #FFF;
-      }
-      to {
-         color: transparent;
-         border: none;
-      }
-   }
-   header #logo img {
-      animation-name: only-player-2;
-      animation-timing-function: linear;
-      animation-duration: .5s;
-   }
-   @keyframes only-player-2 {
-      from {
-         width: 150px;
-      }
-      to {
-         width: 0;
-      }
-   }
 }
 @media screen and (min-height: 181px) {
    header {
       animation-name: not-player;
       animation-timing-function: linear;
-      animation-duration: .5s;
+      animation-duration: .2s;
       /* animation-play-state: paused; */
       visibility: visible;
 
@@ -155,13 +176,14 @@
          background-color: rgba(0, 0, 0, 0);
       }
       to {
+         visibility: visible;
          background-color: rgba(0, 0, 0, 0.5);
       }
    }
    header .btn {
       animation-name: not-player-2;
       animation-timing-function: linear;
-      animation-duration: .5s;
+      animation-duration: .1zs;
    }
    @keyframes not-player-2 {
       from {
@@ -176,14 +198,14 @@
    header #logo .pxdesktop {
       animation-name: not-player-3;
       animation-timing-function: linear;
-      animation-duration: .5s;
+      animation-duration: .2s;
    }
    @keyframes not-player-3 {
       from {
-         width: 0;
+         width: 0px;
       }
       to {
-         width: 150px;
+         width: 40px;
       }
    }
 }
